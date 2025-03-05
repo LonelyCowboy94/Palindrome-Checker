@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    font-family: 'Baloo 2', sans-serif;  
+}
+
+#heading {
+    color: 	#ff79c6;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 5px #ee078a;
+    font-size: 2.8rem;
+}
+
+#heading:hover span {
+    cursor: default;
+    display: inline-block;
+    animation: wave 0.6s ease-in-out infinite;
+}
+
+@keyframes wave {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-7px); }
+}
+
+#heading span:nth-child(9) { animation-delay: 0s; }
+#heading span:nth-child(8) { animation-delay: 0.1s; }
+#heading span:nth-child(10) { animation-delay: 0.1s; }
+#heading span:nth-child(7) { animation-delay: 0.2s; }
+#heading span:nth-child(11) { animation-delay: 0.2s; }
+#heading span:nth-child(6) { animation-delay: 0.3s; }
+#heading span:nth-child(12) { animation-delay: 0.3s; }
+#heading span:nth-child(5) { animation-delay: 0.4s; }
+#heading span:nth-child(13) { animation-delay: 0.4s; }
+#heading span:nth-child(4) { animation-delay: 0.5s; }
+#heading span:nth-child(14) { animation-delay: 0.5s; }
+#heading span:nth-child(3) { animation-delay: 0.6s; }
+#heading span:nth-child(15) { animation-delay: 0.6s; }
+#heading span:nth-child(2) { animation-delay: 0.7s; }
+#heading span:nth-child(16) { animation-delay: 0.7s; }
+#heading span:nth-child(1) { animation-delay: 0.8s; }
+#heading span:nth-child(17) { animation-delay: 0.8s; }
+
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #1e1e2e;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 700px;
+}
+
+#palindromeChecker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 550px;
+    min-height: 100px;
+    background-color: #282a36b0;
+    border-radius: 10px;
+}
+
+#input {
+    margin-top: 30px;
+}
+
+#text-input {
+    font-family: 'Baloo 2', sans-serif;
+    border: none;
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 0 15px 0 15px;
+    border-radius: 25px;
+    background-color: #f8f8f2c5;
+}
+
+#check-btn {
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 1.3rem;
+    padding: 5px 10px 5px 10px;
+    border: none;
+    border-radius: 15px;
+    margin-left: 15px;
+    background-color: #50fa7b;
+    color: white;
+    text-shadow: 1px 1px 3px #333333;
+    font-weight: bold;
+}
+
+#check-btn:hover {
+    color: #fda9d9;
+}
+
+#check-btn:active {
+    background-color: #40d47e;
+    transform: scale(0.98);
+}
+
+#result {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 92%;
+    min-height: 80px;
+    color: #fda9d9;
+    font-size: 1.2rem;
+    overflow: scroll;
+    text-align: center;
+}
+
+#result p {
+    text-wrap: wrap;   
+}
+
+details {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.6rem;
+    background-color: #44475a69;
+    color: 	#f8f8f2;
+    padding: 10px;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+details summary {
+    padding: 0 10px 0 10px;
+    list-style: none;
+    transition: 0.2s ease-in;
+}
+
+details summary:hover {
+    cursor: pointer;
+    text-shadow: 1px 1px 10px #ee078a;
+}
+
+details[open] summary {
+    text-shadow: 1px 1px 13px #fd1e9c;
+}
+
+details span {
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+
+details p {
+    font-size: 1.3rem;
+}
+
+details ul {
+    text-align: left;
+    font-size: 1rem;
+    transform: translateX(calc(50% - 200px));
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        background-color: #1e1e2e;
+    }
+
+    .container {
+        transform: scale(0.68);
+    }
+}
+
+@media screen and (max-width: 390px) {
+    body {
+        background-color: #1e1e2e;
+    }
+
+    .container {
+        transform: scale(0.72);
+    }
+}
+
+@media screen and (max-width: 428px) {
+    body {
+        background-color: #1e1e2e;
+    }
+
+    .container {
+        transform: scale(0.767);
+    }
+}
